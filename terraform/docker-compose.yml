@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  terraform:
+    image: hashicorp/terraform:latest # Official Terraform Docker image
+    working_dir: /workspace           # Directory inside the container
+    volumes:
+      - C:/Users/Ayushi/Downloads/Final/terraform:/workspace                 # Mount current directory into the container
+    entrypoint: ["terraform"]             # Default shell entrypoint
